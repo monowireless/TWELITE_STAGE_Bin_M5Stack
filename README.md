@@ -161,6 +161,25 @@ Hard resetting via RTS pin...
 
 書換前に TWELITE STAGE 基板から M5Stack を取り外してください。
 
+
+
+### PySerial の導入
+
+事前にpython上で[PySerial](https://pythonhosted.org/pyserial/)が動作するようにしておいてください。すでに導入済みの場合は、再インストールや更新は、通常必要ありません。
+
+代表的な導入例を挙げておきます。pipの導入（導入済みであれば不要）と`pip install pyserial`の実行です。
+
+```
+$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+... {get-pin.pyを取得}
+$ python get-pip.py
+... {get-pip.pyを実行してpipを利用可能とする}
+$ python -m pip install pyserial
+... {PySerialの導入}
+```
+
+
+
 ### デバイス名の確認
 
 事前にデバイスドライバの導入は済ませておいてください。以下に挙げた手順は一例です。
